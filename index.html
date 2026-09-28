@@ -1,63 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Terms & Conditions | PartsBaba.ai</title>
-
   <meta
     name="description"
-    content="Read the Terms and Conditions governing the use of PartsBaba.ai and its RFQ, sourcing, quotation and procurement services."
-  >
+    content="Terms and Conditions for using PartsBaba.ai and its electronic parts sourcing and RFQ services."
+  />
 
   <style>
-
-    /* =========================================================
-       PARTSBABA.AI — TERMS & CONDITIONS
-       ========================================================= */
-
     :root {
-
-      --pb-navy: #080c4f;
-      --pb-navy-2: #101650;
-
-      --pb-blue: #1597ea;
-      --pb-blue-dark: #087bd0;
-
-      --pb-text: #20243a;
-      --pb-muted: #687087;
-
-      --pb-bg: #ffffff;
-      --pb-bg-soft: #f7f9fd;
-
-      --pb-border: #e5e9f1;
-
-      --pb-warning-bg: #fff8e8;
-      --pb-warning-border: #f0c65c;
-      --pb-warning-text: #765500;
-
-      --pb-info-bg: #eef7ff;
-      --pb-info-border: #b9ddfa;
-
-      --pb-green: #14835a;
-
-      --pb-container: 1180px;
-
-      --pb-shadow:
-        0 15px 45px rgba(24, 37, 82, 0.07);
-
+      --primary: #ff6b00;
+      --primary-dark: #e85f00;
+      --dark: #111827;
+      --text: #374151;
+      --muted: #6b7280;
+      --light: #f8fafc;
+      --border: #e5e7eb;
+      --white: #ffffff;
+      --orange-light: #fff7ed;
+      --orange-border: #fed7aa;
+      --green-light: #f0fdf4;
+      --green-border: #bbf7d0;
+      --blue-light: #eff6ff;
+      --blue-border: #bfdbfe;
+      --shadow: 0 10px 30px rgba(17, 24, 39, 0.07);
+      --radius: 18px;
     }
-
-
-    /* =========================================================
-       RESET
-       ========================================================= */
 
     * {
       box-sizing: border-box;
@@ -67,28 +38,15 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 100px;
     }
 
     body {
-
       font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Arial,
-        sans-serif;
-
-      color: var(--pb-text);
-
-      background: var(--pb-bg);
-
+        Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: #ffffff;
       line-height: 1.75;
-
-      -webkit-font-smoothing: antialiased;
-
     }
 
     a {
@@ -96,1204 +54,634 @@
       text-decoration: none;
     }
 
-    .container {
-
-      width:
-        min(
-          calc(100% - 40px),
-          var(--pb-container)
-        );
-
-      margin: auto;
-
+    img {
+      max-width: 100%;
+      display: block;
     }
 
-
-    /* =========================================================
+    /* =========================
        NAVBAR
-       ========================================================= */
+    ========================== */
 
     .navbar {
-
       position: sticky;
-
       top: 0;
-
       z-index: 1000;
-
-      height: 78px;
-
-      background:
-        rgba(255,255,255,.96);
-
-      backdrop-filter:
-        blur(18px);
-
-      border-bottom:
-        1px solid rgba(229,233,241,.9);
-
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
     }
 
-    .nav-inner {
-
-      height: 100%;
-
+    .nav-container {
+      max-width: 1180px;
+      margin: auto;
+      padding: 14px 24px;
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 30px;
-
     }
 
-    .logo {
-
-      width: 185px;
-
+    .logo img {
+      width: 150px;
       height: auto;
-
-      display: block;
-
     }
 
     .nav-links {
-
       display: flex;
-
       align-items: center;
-
-      gap: 27px;
-
+      gap: 28px;
       font-size: 14px;
-
       font-weight: 600;
-
-      color: #596176;
-
+      color: #374151;
     }
 
     .nav-links a {
-
-      transition:
-        color .2s ease;
-
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
-
-      color:
-        var(--pb-blue);
-
+      color: var(--primary);
     }
 
     .nav-cta {
-
-      padding:
-        10px 18px;
-
-      background:
-        var(--pb-navy);
-
+      background: var(--primary);
       color: #fff !important;
-
-      border-radius: 9px;
-
+      padding: 10px 18px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
     }
 
     .nav-cta:hover {
-
-      background:
-        var(--pb-blue);
-
+      background: var(--primary-dark);
     }
 
+    /* =========================
+       HERO
+    ========================== */
 
-    /* =========================================================
-       LEGAL HEADER
-       ========================================================= */
-
-    .legal-hero {
-
+    .hero {
       background:
-
         radial-gradient(
           circle at 85% 20%,
-          rgba(21,151,234,.11),
-          transparent 28%
+          rgba(255, 107, 0, 0.12),
+          transparent 30%
         ),
-
-        linear-gradient(
-          180deg,
-          #f8faff 0%,
-          #ffffff 100%
-        );
-
-      border-bottom:
-        1px solid var(--pb-border);
-
+        linear-gradient(135deg, #fff7ed 0%, #ffffff 55%);
+      border-bottom: 1px solid var(--border);
     }
 
-    .legal-hero-inner {
-
-      padding:
-        70px 0 65px;
-
-      max-width:
-        900px;
-
+    .hero-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 75px 24px 70px;
     }
 
     .breadcrumb {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 8px;
-
-      color: #8991a5;
-
       font-size: 13px;
-
-      margin-bottom: 22px;
-
+      color: var(--muted);
+      margin-bottom: 24px;
     }
 
     .breadcrumb a {
-
-      color:
-        var(--pb-blue);
-
+      color: var(--primary);
       font-weight: 600;
-
     }
 
-    .breadcrumb span {
-
-      color:
-        #b0b6c5;
-
-    }
-
-    .legal-label {
-
+    .hero-label {
       display: inline-flex;
-
       align-items: center;
-
       gap: 8px;
-
-      padding:
-        6px 12px;
-
-      background:
-        #eef7ff;
-
-      border:
-        1px solid #d6ecfc;
-
-      color:
-        var(--pb-blue-dark);
-
-      border-radius:
-        999px;
-
-      font-size: 11px;
-
-      font-weight: 800;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        1px;
-
-      margin-bottom:
-        18px;
-
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--orange-light);
+      border: 1px solid var(--orange-border);
+      color: #c2410c;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
 
-    .legal-label-dot {
-
-      width: 6px;
-      height: 6px;
-
-      border-radius: 50%;
-
-      background:
-        var(--pb-blue);
-
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(38px, 5vw, 60px);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+      color: var(--dark);
+      margin-bottom: 22px;
     }
 
-    .legal-hero h1 {
-
-      font-size:
-        clamp(38px, 5vw, 56px);
-
-      line-height:
-        1.08;
-
-      letter-spacing:
-        -2px;
-
-      color:
-        var(--pb-navy);
-
-      margin-bottom:
-        17px;
-
+    .hero h1 span {
+      color: var(--primary);
     }
 
-    .legal-hero-description {
-
-      max-width:
-        760px;
-
-      color:
-        var(--pb-muted);
-
-      font-size:
-        16px;
-
-      line-height:
-        1.8;
-
+    .hero p {
+      max-width: 780px;
+      font-size: 18px;
+      color: #596273;
+      line-height: 1.7;
     }
 
-    .last-updated {
-
-      display:
-        inline-flex;
-
-      align-items:
-        center;
-
+    .updated {
+      margin-top: 26px;
+      display: inline-flex;
+      align-items: center;
       gap: 8px;
-
-      margin-top:
-        22px;
-
-      color:
-        #777f94;
-
-      font-size:
-        13px;
-
+      font-size: 13px;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 8px 13px;
+      border-radius: 999px;
     }
 
-    .last-updated strong {
-
-      color:
-        var(--pb-text);
-
-    }
-
-
-    /* =========================================================
+    /* =========================
        PAGE LAYOUT
-       ========================================================= */
+    ========================== */
 
-    .legal-layout {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        245px minmax(0, 1fr);
-
-      gap:
-        65px;
-
-      padding:
-        65px 0 100px;
-
-      align-items:
-        start;
-
+    .page-wrapper {
+      max-width: 1180px;
+      margin: auto;
+      padding: 60px 24px 90px;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 60px;
     }
 
+    /* =========================
+       SIDEBAR
+    ========================== */
 
-    /* =========================================================
-       TABLE OF CONTENTS
-       ========================================================= */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
 
-    .toc-wrapper {
-
-      position:
-        sticky;
-
-      top:
-        105px;
-
+    .sidebar-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--dark);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
     }
 
     .toc {
-
-      border:
-        1px solid var(--pb-border);
-
-      border-radius:
-        15px;
-
-      background:
-        #fff;
-
-      padding:
-        22px 20px;
-
-      box-shadow:
-        0 10px 30px rgba(20,30,75,.04);
-
-    }
-
-    .toc-title {
-
-      font-size:
-        12px;
-
-      font-weight:
-        850;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        1px;
-
-      color:
-        var(--pb-navy);
-
-      margin-bottom:
-        13px;
-
+      border-left: 2px solid #f3f4f6;
     }
 
     .toc a {
-
-      display:
-        block;
-
-      padding:
-        7px 0;
-
-      color:
-        #737b90;
-
-      font-size:
-        12.5px;
-
-      line-height:
-        1.45;
-
-      transition:
-        color .2s ease,
-        padding .2s ease;
-
+      display: block;
+      padding: 7px 0 7px 17px;
+      margin-left: -2px;
+      border-left: 2px solid transparent;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.4;
+      transition: all 0.2s ease;
     }
 
     .toc a:hover {
-
-      color:
-        var(--pb-blue);
-
-      padding-left:
-        3px;
-
+      color: var(--primary);
+      border-left-color: var(--primary);
     }
 
+    /* =========================
+       MAIN CONTENT
+    ========================== */
 
-    /* =========================================================
-       LEGAL CONTENT
-       ========================================================= */
-
-    .legal-content {
-
-      min-width:
-        0;
-
-      max-width:
-        820px;
-
+    .content {
+      min-width: 0;
     }
 
-    .legal-content section {
-
-      margin-bottom:
-        50px;
-
-      scroll-margin-top:
-        100px;
-
+    .intro-card {
+      padding: 28px 30px;
+      background: var(--orange-light);
+      border: 1px solid var(--orange-border);
+      border-radius: var(--radius);
+      margin-bottom: 42px;
     }
 
-    .legal-content h2 {
-
-      color:
-        var(--pb-navy);
-
-      font-size:
-        25px;
-
-      line-height:
-        1.3;
-
-      letter-spacing:
-        -.5px;
-
-      margin-bottom:
-        16px;
-
-      padding-bottom:
-        11px;
-
-      border-bottom:
-        1px solid var(--pb-border);
-
+    .intro-card h2 {
+      font-size: 21px;
+      color: var(--dark);
+      margin-bottom: 8px;
     }
 
-    .legal-content h3 {
-
-      color:
-        var(--pb-text);
-
-      font-size:
-        17px;
-
-      line-height:
-        1.45;
-
-      margin:
-        25px 0 9px;
-
+    .intro-card p {
+      color: #57534e;
     }
 
-    .legal-content p {
-
-      color:
-        #5f677b;
-
-      font-size:
-        15px;
-
-      line-height:
-        1.85;
-
-      margin-bottom:
-        15px;
-
+    .section {
+      padding-bottom: 38px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 100px;
     }
 
-    .legal-content ul {
-
-      margin:
-        12px 0 20px 22px;
-
+    .section:last-child {
+      border-bottom: 0;
     }
 
-    .legal-content li {
-
-      color:
-        #5f677b;
-
-      font-size:
-        15px;
-
-      line-height:
-        1.8;
-
-      padding-left:
-        5px;
-
-      margin-bottom:
-        6px;
-
+    .section-number {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 7px;
+      letter-spacing: 0.5px;
     }
 
-    .legal-content strong {
-
-      color:
-        var(--pb-text);
-
-      font-weight:
-        700;
-
+    .section h2 {
+      color: var(--dark);
+      font-size: 25px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
     }
 
-
-    /* =========================================================
-       IMPORTANT RFQ NOTICE
-       ========================================================= */
-
-    .rfq-notice {
-
-      background:
-        var(--pb-warning-bg);
-
-      border:
-        1px solid var(--pb-warning-border);
-
-      border-left:
-        4px solid #e3ad24;
-
-      border-radius:
-        12px;
-
-      padding:
-        22px 24px;
-
-      margin:
-        0 0 48px;
-
+    .section h3 {
+      color: var(--dark);
+      font-size: 17px;
+      margin: 23px 0 8px;
     }
 
-    .rfq-notice-title {
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      gap:
-        9px;
-
-      color:
-        #634900;
-
-      font-size:
-        15px;
-
-      font-weight:
-        800;
-
-      margin-bottom:
-        7px;
-
+    .section p {
+      margin-bottom: 13px;
+      color: #4b5563;
     }
 
-    .rfq-notice p {
-
-      color:
-        var(--pb-warning-text);
-
-      font-size:
-        14px;
-
-      line-height:
-        1.75;
-
-      margin:
-        0;
-
+    .section ul {
+      margin: 12px 0 15px 21px;
+      color: #4b5563;
     }
 
+    .section li {
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
 
-    /* =========================================================
-       INFO BOX
-       ========================================================= */
+    strong {
+      color: #1f2937;
+    }
+
+    /* =========================
+       RFQ PROCESS
+    ========================== */
+
+    .rfq-process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .process-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(17, 24, 39, 0.04);
+    }
+
+    .process-number {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: var(--orange-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .process-card h4 {
+      color: var(--dark);
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .process-card p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* =========================
+       HIGHLIGHT BOXES
+    ========================== */
 
     .info-box {
+      padding: 21px 23px;
+      border-radius: 14px;
+      margin: 20px 0;
+      border: 1px solid;
+    }
 
-      background:
-        var(--pb-info-bg);
+    .info-box.green {
+      background: var(--green-light);
+      border-color: var(--green-border);
+    }
 
-      border:
-        1px solid var(--pb-info-border);
+    .info-box.blue {
+      background: var(--blue-light);
+      border-color: var(--blue-border);
+    }
 
-      border-radius:
-        12px;
+    .info-box.orange {
+      background: var(--orange-light);
+      border-color: var(--orange-border);
+    }
 
-      padding:
-        21px 23px;
-
-      margin:
-        22px 0;
-
+    .info-box strong {
+      display: block;
+      margin-bottom: 5px;
     }
 
     .info-box p {
-
-      color:
-        #49647d;
-
-      font-size:
-        14px;
-
-      margin:
-        0;
-
+      margin: 0;
+      font-size: 14px;
     }
 
+    /* =========================
+       COMPANY CONTACT
+    ========================== */
 
-    /* =========================================================
-       RFQ FLOW
-       ========================================================= */
-
-    .rfq-flow {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
-      gap:
-        10px;
-
-      margin:
-        25px 0 30px;
-
+    .contact-card {
+      background: #111827;
+      color: #fff;
+      border-radius: 20px;
+      padding: 34px;
+      margin-top: 10px;
     }
 
-    .rfq-step {
-
-      position:
-        relative;
-
-      padding:
-        18px 14px;
-
-      border:
-        1px solid var(--pb-border);
-
-      border-radius:
-        12px;
-
-      background:
-        #fff;
-
-      text-align:
-        center;
-
+    .contact-card h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
     }
 
-    .rfq-step-number {
-
-      width:
-        30px;
-
-      height:
-        30px;
-
-      display:
-        grid;
-
-      place-items:
-        center;
-
-      margin:
-        0 auto 9px;
-
-      border-radius:
-        8px;
-
-      background:
-        #eef7ff;
-
-      color:
-        var(--pb-blue);
-
-      font-size:
-        11px;
-
-      font-weight:
-        850;
-
+    .contact-card > p {
+      color: #cbd5e1;
+      margin-bottom: 24px;
     }
 
-    .rfq-step strong {
-
-      display:
-        block;
-
-      color:
-        var(--pb-navy);
-
-      font-size:
-        12px;
-
-      line-height:
-        1.35;
-
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 20px;
     }
 
-
-    /* =========================================================
-       CONTACT BOX
-       ========================================================= */
-
-    .contact-box {
-
-      margin-top:
-        20px;
-
-      padding:
-        28px;
-
-      background:
-        var(--pb-bg-soft);
-
-      border:
-        1px solid var(--pb-border);
-
-      border-radius:
-        15px;
-
+    .contact-item {
+      padding: 17px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
     }
 
-    .contact-box h3 {
-
-      margin-top:
-        0;
-
-      margin-bottom:
-        15px;
-
+    .contact-item small {
+      display: block;
+      color: #94a3b8;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 5px;
     }
 
-    .contact-detail {
-
-      display:
-        flex;
-
-      gap:
-        10px;
-
-      color:
-        #5f677b;
-
-      font-size:
-        14px;
-
-      line-height:
-        1.7;
-
-      margin:
-        8px 0;
-
+    .contact-item span,
+    .contact-item a {
+      color: #fff;
+      font-size: 14px;
     }
 
-    .contact-detail strong {
-
-      min-width:
-        70px;
-
+    .contact-item a:hover {
+      color: #fdba74;
     }
 
-    .contact-detail a {
-
-      color:
-        var(--pb-blue-dark);
-
-    }
-
-
-    /* =========================================================
+    /* =========================
        FOOTER
-       ========================================================= */
+    ========================== */
 
     footer {
-
-      background:
-        #070b3f;
-
-      color:
-        #9ca5c2;
-
-      padding:
-        48px 0 25px;
-
+      background: #0b1120;
+      color: #cbd5e1;
+      margin-top: 0;
     }
 
-    .footer-grid {
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 50px 24px 30px;
+    }
 
-      display:
-        grid;
-
-      grid-template-columns:
-        1.3fr .7fr .7fr;
-
-      gap:
-        50px;
-
-      padding-bottom:
-        38px;
-
-      border-bottom:
-        1px solid rgba(255,255,255,.09);
-
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .footer-logo {
-
-      width:
-        180px;
-
-      background:
-        #fff;
-
-      padding:
-        5px 9px;
-
-      border-radius:
-        7px;
-
-      margin-bottom:
-        16px;
-
+      width: 145px;
+      margin-bottom: 17px;
+      background: #fff;
+      padding: 7px;
+      border-radius: 8px;
     }
 
-    .footer-description {
-
-      max-width:
-        390px;
-
-      color:
-        #8d96b3;
-
-      font-size:
-        13px;
-
-      line-height:
-        1.8;
-
+    .footer-brand p {
+      max-width: 360px;
+      font-size: 14px;
+      color: #94a3b8;
     }
 
     .footer-column h4 {
-
-      color:
-        white;
-
-      font-size:
-        13px;
-
-      margin-bottom:
-        16px;
-
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 15px;
     }
 
     .footer-column a {
-
-      display:
-        block;
-
-      color:
-        #929bb6;
-
-      font-size:
-        13px;
-
-      margin-bottom:
-        9px;
-
+      display: block;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 9px;
     }
 
     .footer-column a:hover {
-
-      color:
-        white;
-
+      color: #fb923c;
     }
 
     .footer-bottom {
-
-      padding-top:
-        21px;
-
-      display:
-        flex;
-
-      justify-content:
-        space-between;
-
-      gap:
-        20px;
-
-      flex-wrap:
-        wrap;
-
-      color:
-        #707995;
-
-      font-size:
-        11px;
-
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: #64748b;
     }
 
-
-    /* =========================================================
+    /* =========================
        RESPONSIVE
-       ========================================================= */
+    ========================== */
 
-    @media (max-width: 950px) {
-
-      .legal-layout {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          35px;
-
-      }
-
-      .toc-wrapper {
-
-        position:
-          static;
-
-      }
-
-      .toc {
-
-        display:
-          grid;
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-        gap:
-          0 20px;
-
-      }
-
-      .toc-title {
-
-        grid-column:
-          1 / -1;
-
-      }
-
-      .rfq-flow {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-      }
-
-    }
-
-
-    @media (max-width: 700px) {
-
-      .container {
-
-        width:
-          min(
-            calc(100% - 28px),
-            var(--pb-container)
-          );
-
-      }
-
-      .navbar {
-
-        height:
-          70px;
-
-      }
-
-      .logo {
-
-        width:
-          155px;
-
-      }
-
+    @media (max-width: 900px) {
       .nav-links {
-
-        display:
-          none;
-
+        display: none;
       }
 
-      .legal-hero-inner {
-
-        padding:
-          50px 0;
-
+      .page-wrapper {
+        grid-template-columns: 1fr;
+        gap: 35px;
       }
 
-      .legal-hero h1 {
-
-        letter-spacing:
-          -1.5px;
-
-      }
-
-      .legal-layout {
-
-        padding:
-          45px 0 70px;
-
+      .sidebar {
+        position: static;
       }
 
       .toc {
-
-        display:
-          block;
-
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-left: 0;
+        border-top: 2px solid #f3f4f6;
       }
 
-      .legal-content h2 {
-
-        font-size:
-          22px;
-
+      .toc a {
+        border-left: 0;
+        border-bottom: 1px solid #f3f4f6;
+        padding-left: 0;
+        padding-right: 10px;
       }
 
-      .legal-content p,
-      .legal-content li {
-
-        font-size:
-          14px;
-
+      .rfq-process {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .rfq-flow {
-
-        grid-template-columns:
-          1fr;
-
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
       }
-
-      .footer-grid {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          30px;
-
-      }
-
     }
 
+    @media (max-width: 600px) {
+      .nav-container {
+        padding: 12px 17px;
+      }
+
+      .logo img {
+        width: 130px;
+      }
+
+      .hero-inner {
+        padding: 55px 18px 50px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .page-wrapper {
+        padding: 42px 18px 65px;
+      }
+
+      .toc {
+        grid-template-columns: 1fr;
+      }
+
+      .rfq-process {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 25px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- =======================================================
-       NAVIGATION
-  ======================================================== -->
+  <!-- =========================
+       NAVBAR
+  ========================== -->
 
   <header class="navbar">
+    <div class="nav-container">
 
-    <div class="container nav-inner">
-
-      <a
-        href="https://partsbaba.ai/"
-        aria-label="PartsBaba.ai Home"
-      >
-
+      <a href="https://partsbaba.ai/" class="logo">
         <img
-          class="logo"
           src="https://partsbaba.ai/static/media/PartsBABA_logo.c956a49373c9e9868bf7.png"
-          alt="PartsBaba.ai"
-        >
-
+          alt="PartsBaba"
+        />
       </a>
 
-
       <nav class="nav-links">
+        <a href="https://partsbaba.ai/">AI Search</a>
+        <a href="https://partsbaba.ai/categories">Categories</a>
+        <a href="https://partsbaba.ai/#insights">Insights</a>
+        <a href="https://partsbaba.ai/#about">About Us</a>
+        <a href="https://partsbaba.ai/#contact">Contact</a>
 
-        <a href="https://partsbaba.ai/">
-          AI Search
-        </a>
-
-        <a href="https://partsbaba.ai/categories">
-          Categories
-        </a>
-
-        <a href="https://partsbaba.ai/#insights">
-          Insights
-        </a>
-
-        <a href="https://partsbaba.ai/">
-          About Us
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
-        <a
-          href="https://partsbaba.ai/"
-          class="nav-cta"
-        >
+        <a href="https://partsbaba.ai/" class="nav-cta">
           Request a Quote
         </a>
-
       </nav>
 
     </div>
-
   </header>
 
 
+  <!-- =========================
+       HERO
+  ========================== -->
 
-  <!-- =======================================================
-       LEGAL HERO
-  ======================================================== -->
+  <section class="hero">
 
-  <section class="legal-hero">
-
-    <div class="container legal-hero-inner">
-
+    <div class="hero-inner">
 
       <div class="breadcrumb">
-
-        <a href="https://partsbaba.ai/">
-          PartsBaba.ai
-        </a>
-
-        <span>›</span>
-
-        <span>
-          Terms &amp; Conditions
-        </span>
-
-      </div>
-
-
-      <div class="legal-label">
-
-        <span class="legal-label-dot"></span>
-
+        <a href="https://partsbaba.ai/">Home</a>
+        &nbsp;/&nbsp;
         Legal
-
+        &nbsp;/&nbsp;
+        Terms & Conditions
       </div>
 
+      <div class="hero-label">
+        ✦ Simple & Transparent
+      </div>
 
       <h1>
-        Terms &amp; Conditions
+        Terms & <span>Conditions</span>
       </h1>
 
-
-      <p class="legal-hero-description">
-
-        Please read these Terms &amp; Conditions carefully before
-        using PartsBaba.ai, submitting an RFQ, requesting a quotation,
-        or proceeding with a purchase through our platform.
-
+      <p>
+        These terms explain how PartsBaba.ai works, how our RFQ and sourcing
+        process works, and what you can expect when using our platform and
+        services.
       </p>
 
-
-      <div class="last-updated">
-
-        <span>●</span>
-
-        <span>
-          Last Updated:
-          <strong>September 2026</strong>
-        </span>
-
+      <div class="updated">
+        ● Last Updated: September 2026
       </div>
 
     </div>
@@ -1301,1455 +689,777 @@
   </section>
 
 
+  <!-- =========================
+       CONTENT
+  ========================== -->
 
-  <!-- =======================================================
-       LEGAL CONTENT
-  ======================================================== -->
+  <div class="page-wrapper">
 
-  <main class="container legal-layout">
+    <!-- SIDEBAR -->
 
+    <aside class="sidebar">
 
-    <!-- =====================================================
-         TABLE OF CONTENTS
-    ====================================================== -->
-
-    <aside class="toc-wrapper">
-
-      <div class="toc">
-
-        <div class="toc-title">
-          On this page
-        </div>
-
-
-        <a href="#acceptance">
-          1. Acceptance of Terms
-        </a>
-
-        <a href="#nature">
-          2. Nature of PartsBaba.ai
-        </a>
-
-        <a href="#rfq">
-          3. RFQ Submission
-        </a>
-
-        <a href="#rfq-not-order">
-          4. RFQ Is Not an Order
-        </a>
-
-        <a href="#response">
-          5. RFQ Response
-        </a>
-
-        <a href="#pricing">
-          6. Quotations &amp; Pricing
-        </a>
-
-        <a href="#availability">
-          7. Availability
-        </a>
-
-        <a href="#lead-time">
-          8. Lead Time
-        </a>
-
-        <a href="#confirmation">
-          9. Order Confirmation
-        </a>
-
-        <a href="#cancellation">
-          10. Cancellation
-        </a>
-
-        <a href="#products">
-          11. Product Information
-        </a>
-
-        <a href="#payment">
-          12. Payment
-        </a>
-
-        <a href="#shipping">
-          13. Shipping &amp; Delivery
-        </a>
-
-        <a href="#returns">
-          14. Returns &amp; Refunds
-        </a>
-
-        <a href="#accounts">
-          15. User Accounts
-        </a>
-
-        <a href="#prohibited">
-          16. Prohibited Use
-        </a>
-
-        <a href="#intellectual">
-          17. Intellectual Property
-        </a>
-
-        <a href="#third-party">
-          18. Third Parties
-        </a>
-
-        <a href="#liability">
-          19. Limitation of Liability
-        </a>
-
-        <a href="#force">
-          20. Force Majeure
-        </a>
-
-        <a href="#privacy">
-          21. Privacy
-        </a>
-
-        <a href="#changes">
-          22. Changes to Terms
-        </a>
-
-        <a href="#law">
-          23. Governing Law
-        </a>
-
-        <a href="#contact">
-          24. Contact Us
-        </a>
-
+      <div class="sidebar-title">
+        On this page
       </div>
+
+      <nav class="toc">
+
+        <a href="#using-platform">Using PartsBaba.ai</a>
+        <a href="#rfq">Our RFQ Process</a>
+        <a href="#response">RFQ Responses</a>
+        <a href="#pricing">Quotations & Pricing</a>
+        <a href="#availability">Product Availability</a>
+        <a href="#leadtime">Lead Times</a>
+        <a href="#confirmation">Order Confirmation</a>
+        <a href="#payment">Payments</a>
+        <a href="#shipping">Delivery & Shipping</a>
+        <a href="#returns">Returns & Support</a>
+        <a href="#accounts">Your Account</a>
+        <a href="#responsible">Responsible Use</a>
+        <a href="#ip">Intellectual Property</a>
+        <a href="#suppliers">Supplier Network</a>
+        <a href="#unexpected">Unexpected Events</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#updates">Updates</a>
+        <a href="#law">Applicable Law</a>
+        <a href="#contact">Contact Us</a>
+
+      </nav>
 
     </aside>
 
 
+    <!-- MAIN -->
 
-    <!-- =====================================================
-         MAIN TERMS
-    ====================================================== -->
-
-    <article class="legal-content">
+    <main class="content">
 
 
-      <!-- IMPORTANT NOTICE -->
+      <!-- INTRO -->
 
-      <div class="rfq-notice">
+      <div class="intro-card">
 
-        <div class="rfq-notice-title">
-
-          ⚠️
-
-          Important RFQ Notice
-
-        </div>
-
+        <h2>
+          Welcome to PartsBaba.ai
+        </h2>
 
         <p>
-
-          <strong>
-            Submitting or generating an RFQ does not mean that
-            an order has been placed or confirmed.
-          </strong>
-
-          An RFQ does not guarantee product availability,
-          pricing, lead time or delivery. An order is considered
-          confirmed only after PartsBaba has confirmed the
-          applicable commercial terms and the required advance
-          payment has been successfully received.
-
+          We believe sourcing electronic and hard-to-find parts should be
+          simple, transparent and reliable. These Terms & Conditions are
+          designed to clearly explain how our platform works and how we work
+          with you to source the products you need.
         </p>
 
       </div>
 
 
+      <!-- 1 -->
 
-      <!-- ===================================================
-           1
-      ==================================================== -->
+      <section class="section" id="using-platform">
 
-      <section id="acceptance">
+        <span class="section-number">01</span>
 
         <h2>
-          1. Acceptance of Terms
+          Using PartsBaba.ai
         </h2>
 
-
         <p>
-
-          Welcome to <strong>PartsBaba.ai</strong>, operated by
-          <strong>PartsBaba Ventures Private Limited</strong>
-          (“PartsBaba”, “we”, “us”, or “our”).
-
+          PartsBaba.ai is a technology-enabled sourcing platform that helps
+          individuals, engineers, businesses and organisations find and source
+          electronic components, IT parts, hardware, accessories and other
+          specialised products.
         </p>
 
-
         <p>
-
-          By accessing or using PartsBaba.ai, submitting a Request
-          for Quotation (“RFQ”), creating an account, communicating
-          with PartsBaba, or otherwise using any service provided
-          through the platform, you agree to be bound by these
-          Terms &amp; Conditions (“Terms”).
-
+          By accessing or using PartsBaba.ai, you agree to use the platform
+          responsibly and in accordance with these Terms & Conditions.
         </p>
 
-
         <p>
-
-          If you do not agree with these Terms, please do not use
-          PartsBaba.ai or its services.
-
+          Our goal is to make the sourcing experience easier by combining
+          technology, supplier connections and human assistance.
         </p>
 
       </section>
 
 
+      <!-- 2 -->
 
-      <!-- ===================================================
-           2
-      ==================================================== -->
+      <section class="section" id="rfq">
 
-      <section id="nature">
-
-        <h2>
-          2. Nature of PartsBaba.ai
-        </h2>
-
-
-        <p>
-
-          PartsBaba.ai primarily operates as an
-          <strong>RFQ and sourcing platform</strong>.
-
-        </p>
-
-
-        <p>
-
-          PartsBaba.ai is designed to help individuals, businesses,
-          engineers, service centres, manufacturers, resellers and
-          other customers identify and source electronic parts,
-          components, spare parts, accessories and related products.
-
-        </p>
-
-
-        <p>
-
-          The availability of a product, component, part number,
-          specification, brand, image, description or other
-          information on the website does not constitute a confirmed
-          offer to sell.
-
-        </p>
-
-
-        <p>
-
-          PartsBaba may assist users in identifying products,
-          checking availability, obtaining supplier information,
-          determining pricing and estimated lead times, and
-          coordinating the procurement process.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           3
-      ==================================================== -->
-
-      <section id="rfq">
+        <span class="section-number">02</span>
 
         <h2>
-          3. Submission of an RFQ
+          How Our RFQ Process Works
         </h2>
 
-
         <p>
-
-          When you submit an RFQ, you may be required to provide
-          information necessary for PartsBaba to understand and
-          process your sourcing requirement.
-
+          Our Request for Quote (RFQ) process is designed to help you find
+          the right product and understand its commercial details before
+          placing an order.
         </p>
 
+        <div class="rfq-process">
 
-        <ul>
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h4>Share Your Requirement</h4>
+            <p>
+              Tell us what part, component or product you are looking for.
+            </p>
+          </div>
 
-          <li>Name or company name</li>
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h4>We Source</h4>
+            <p>
+              Our team checks relevant supplier and sourcing options.
+            </p>
+          </div>
 
-          <li>Contact information</li>
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h4>Receive a Quote</h4>
+            <p>
+              We share available pricing, specifications and expected lead
+              time.
+            </p>
+          </div>
 
-          <li>Email address</li>
-
-          <li>Phone number</li>
-
-          <li>Delivery location</li>
-
-          <li>Required quantity</li>
-
-          <li>Part number, SKU or model number</li>
-
-          <li>Brand preference</li>
-
-          <li>Technical specifications</li>
-
-          <li>Required delivery timeline</li>
-
-          <li>Images, documents or additional information</li>
-
-        </ul>
-
-
-        <p>
-
-          You are responsible for ensuring that all information
-          submitted is accurate and complete.
-
-        </p>
-
-
-        <p>
-
-          Incorrect part numbers, specifications, quantities,
-          delivery locations or other information may result in
-          an incorrect quotation, delay, inability to source the
-          item or cancellation of the RFQ.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           4
-      ==================================================== -->
-
-      <section id="rfq-not-order">
-
-        <h2>
-          4. RFQ Does Not Mean Order Confirmation
-        </h2>
-
-
-        <div class="info-box">
-
-          <p>
-
-            <strong>
-              Submission or generation of an RFQ is a request
-              for quotation only.
-            </strong>
-
-            It does not constitute an order, purchase contract,
-            reservation, stock allocation or guarantee of delivery.
-
-          </p>
+          <div class="process-card">
+            <div class="process-number">04</div>
+            <h4>Confirm Your Order</h4>
+            <p>
+              Once terms are accepted and applicable advance is received,
+              the order is confirmed.
+            </p>
+          </div>
 
         </div>
 
-
-        <p>
-
-          An RFQ does not guarantee:
-
-        </p>
-
-
-        <ul>
-
-          <li>Product availability</li>
-
-          <li>Product allocation</li>
-
-          <li>Price</li>
-
-          <li>Delivery</li>
-
-          <li>Lead time</li>
-
-          <li>Brand availability</li>
-
-          <li>Quantity availability</li>
-
-          <li>Supplier acceptance</li>
-
-          <li>Import availability</li>
-
-          <li>Any other commercial term</li>
-
-        </ul>
-
-
-        <p>
-
-          The generation of an RFQ must not be interpreted as
-          confirmation that PartsBaba has accepted the requirement
-          or has committed to supply the requested products.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           5
-      ==================================================== -->
-
-      <section id="response">
-
-        <h2>
-          5. RFQ Response
-        </h2>
-
-
-        <p>
-
-          PartsBaba will endeavour to contact or provide an update
-          to the customer regarding a submitted RFQ within
-          <strong>24–48 business hours</strong>, subject to working
-          hours, supplier response times and the complexity of
-          the requirement.
-
-        </p>
-
-
-        <p>
-
-          The 24–48 business hour period is an indicative service
-          timeline and is not a guarantee that a quotation,
-          availability confirmation or final price will be provided
-          within that period.
-
-        </p>
-
-
-        <p>
-
-          Specialised, imported, obsolete, bulk or difficult-to-source
-          requirements may require additional processing time.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           6
-      ==================================================== -->
-
-      <section id="pricing">
-
-        <h2>
-          6. Quotations and Pricing
-        </h2>
-
-
-        <p>
-
-          Any price communicated through PartsBaba.ai may be
-          indicative and may be subject to supplier confirmation,
-          availability, quantity, taxes, shipping, logistics,
-          import duties or other applicable charges.
-
-        </p>
-
-
-        <p>
+        <div class="info-box green">
 
           <strong>
-            Prices are not guaranteed until the order is confirmed
-            by PartsBaba.
+            Your RFQ is the beginning of the sourcing conversation.
           </strong>
 
-        </p>
-
-
-        <p>
-
-          PartsBaba reserves the right to revise a quotation if
-          there is a change in supplier pricing, exchange rates,
-          taxes, duties, freight charges, availability, quantity,
-          specifications or other relevant commercial factors.
-
-        </p>
-
-
-        <p>
-
-          Any applicable material change in pricing will be
-          communicated to the customer before seeking confirmation
-          of the order.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           7
-      ==================================================== -->
-
-      <section id="availability">
-
-        <h2>
-          7. Product Availability
-        </h2>
-
-
-        <p>
-
-          Product availability shown on PartsBaba.ai may be
-          indicative and may not represent real-time physical
-          inventory.
-
-        </p>
-
-
-        <p>
-
-          A product may become unavailable, discontinued,
-          allocated to another customer, delayed, restricted
-          or otherwise unobtainable after an RFQ has been submitted.
-
-        </p>
-
-
-        <p>
-
-          PartsBaba will endeavour to provide an alternative
-          where reasonably possible but does not guarantee that
-          an unavailable product can be sourced.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           8
-      ==================================================== -->
-
-      <section id="lead-time">
-
-        <h2>
-          8. Lead Time
-        </h2>
-
-
-        <div class="info-box">
-
           <p>
-
-            <strong>
-              All lead times communicated through the RFQ process
-              should be treated as estimated or expected timelines
-              unless PartsBaba expressly confirms a guaranteed
-              delivery commitment in writing.
-            </strong>
-
+            Submitting an RFQ allows our team to understand your requirement
+            and work on suitable sourcing options. It does not by itself
+            create a confirmed order.
           </p>
 
         </div>
 
+      </section>
+
+
+      <!-- 3 -->
+
+      <section class="section" id="response">
+
+        <span class="section-number">03</span>
+
+        <h2>
+          RFQ Responses
+        </h2>
 
         <p>
-
-          Actual delivery timelines may vary because of:
-
+          Once an RFQ is received, our team reviews the requirement and works
+          with relevant suppliers to identify suitable options.
         </p>
 
+        <p>
+          We generally aim to provide an update within
+          <strong>24–48 business hours</strong>, depending on the complexity of
+          the requirement, supplier response time and product availability.
+        </p>
 
-        <ul>
-
-          <li>Supplier delays</li>
-
-          <li>Manufacturing delays</li>
-
-          <li>Stock availability</li>
-
-          <li>Import procedures</li>
-
-          <li>Customs clearance</li>
-
-          <li>Logistics and courier delays</li>
-
-          <li>Transportation disruptions</li>
-
-          <li>Force majeure events</li>
-
-          <li>Government restrictions</li>
-
-          <li>Weather or natural events</li>
-
-          <li>Incorrect or incomplete customer information</li>
-
-          <li>Other circumstances beyond PartsBaba's reasonable control</li>
-
-        </ul>
+        <p>
+          Some specialised, imported or hard-to-find products may require
+          additional sourcing time. In such cases, we will keep you informed
+          as the sourcing progresses.
+        </p>
 
       </section>
 
 
+      <!-- 4 -->
 
-      <!-- ===================================================
-           9
-      ==================================================== -->
+      <section class="section" id="pricing">
 
-      <section id="confirmation">
+        <span class="section-number">04</span>
 
         <h2>
-          9. Order Confirmation and Advance Payment
+          Quotations & Pricing
         </h2>
 
-
         <p>
-
-          An order will generally be considered confirmed only
-          after:
-
+          Pricing shared through an RFQ is based on the information available
+          from suppliers and other applicable commercial factors at the time
+          of sourcing.
         </p>
 
+        <p>
+          A quotation may take into account factors such as:
+        </p>
 
-        <div class="rfq-flow">
+        <ul>
+          <li>Supplier pricing and availability</li>
+          <li>Quantity requested</li>
+          <li>Currency exchange rates</li>
+          <li>Applicable taxes and duties</li>
+          <li>Shipping and freight costs</li>
+          <li>Product specifications and sourcing location</li>
+        </ul>
 
+        <div class="info-box blue">
 
-          <div class="rfq-step">
+          <strong>
+            Clear pricing before confirmation
+          </strong>
 
-            <div class="rfq-step-number">
-              01
-            </div>
-
-            <strong>
-              PartsBaba confirms commercial terms
-            </strong>
-
-          </div>
-
-
-          <div class="rfq-step">
-
-            <div class="rfq-step-number">
-              02
-            </div>
-
-            <strong>
-              Customer accepts the quotation
-            </strong>
-
-          </div>
-
-
-          <div class="rfq-step">
-
-            <div class="rfq-step-number">
-              03
-            </div>
-
-            <strong>
-              Required advance is paid
-            </strong>
-
-          </div>
-
-
-          <div class="rfq-step">
-
-            <div class="rfq-step-number">
-              04
-            </div>
-
-            <strong>
-              Order is confirmed
-            </strong>
-
-          </div>
-
+          <p>
+            The final commercial terms will be shared with you before the
+            order is confirmed. If supplier pricing or other sourcing
+            conditions change before confirmation, we may need to update the
+            quotation accordingly.
+          </p>
 
         </div>
 
+      </section>
+
+
+      <!-- 5 -->
+
+      <section class="section" id="availability">
+
+        <span class="section-number">05</span>
+
+        <h2>
+          Product Availability
+        </h2>
 
         <p>
-
-          Unless a different advance requirement is specifically
-          communicated in writing, the required advance will
-          generally be <strong>10%</strong>.
-
+          We work with our supplier network to identify available products
+          based on your requirement.
         </p>
 
-
         <p>
-
-          PartsBaba may specify a different advance percentage
-          for particular products, imported products, bulk orders,
-          special procurement, customised requirements or other
-          circumstances.
-
+          Availability can vary depending on supplier inventory, market
+          conditions, product lifecycle, location and quantity requirements.
         </p>
 
-
         <p>
-
-          Until the applicable confirmation and payment requirements
-          are completed, the RFQ remains a request and should not
-          be treated as a confirmed order.
-
+          Where a requested item is unavailable, we may help identify an
+          alternative product, supplier or sourcing option where appropriate.
         </p>
 
       </section>
 
 
+      <!-- 6 -->
 
-      <!-- ===================================================
-           10
-      ==================================================== -->
+      <section class="section" id="leadtime">
 
-      <section id="cancellation">
+        <span class="section-number">06</span>
 
         <h2>
-          10. Cancellation by PartsBaba
+          Lead Times
         </h2>
 
-
         <p>
-
-          PartsBaba reserves the right, at its reasonable
-          discretion, to cancel, reject, modify, suspend or
-          discontinue an RFQ, quotation or order at any stage
-          where circumstances require it.
-
+          We provide an estimated delivery or sourcing timeline based on the
+          latest information available from our suppliers and logistics
+          partners.
         </p>
 
-
         <p>
-          Reasons may include, without limitation:
+          Lead times can vary due to supplier processing, inventory movement,
+          customs, transportation and other circumstances outside the direct
+          control of PartsBaba.
         </p>
 
+        <p>
+          If there is a significant change to an expected timeline, we will
+          communicate the available information to you.
+        </p>
+
+      </section>
+
+
+      <!-- 7 -->
+
+      <section class="section" id="confirmation">
+
+        <span class="section-number">07</span>
+
+        <h2>
+          Order Confirmation
+        </h2>
+
+        <p>
+          We want to make the distinction between an RFQ and a confirmed order
+          clear and straightforward.
+        </p>
+
+        <p>
+          An order is considered confirmed when:
+        </p>
 
         <ul>
-
-          <li>Product unavailability</li>
-
-          <li>Supplier cancellation</li>
-
-          <li>Incorrect product information</li>
-
-          <li>Pricing errors</li>
-
-          <li>Supplier price changes</li>
-
-          <li>Import or regulatory restrictions</li>
-
-          <li>Payment issues</li>
-
-          <li>Fraud or suspected fraudulent activity</li>
-
-          <li>Customer information discrepancies</li>
-
-          <li>Technical errors</li>
-
-          <li>Inventory discrepancies</li>
-
-          <li>Logistics limitations</li>
-
-          <li>Unreasonable delivery requirements</li>
-
-          <li>Force majeure</li>
-
-          <li>Other operational or commercial reasons</li>
-
+          <li>The quotation and applicable commercial terms have been accepted;</li>
+          <li>The required product and quantity have been confirmed; and</li>
+          <li>The applicable advance payment has been received.</li>
         </ul>
 
+        <p>
+          Unless a different payment requirement is communicated for a
+          particular order, PartsBaba may require an
+          <strong>advance payment of 10%</strong> to confirm the order.
+        </p>
+
+        <div class="info-box green">
+
+          <strong>
+            No surprise confirmation
+          </strong>
+
+          <p>
+            We aim to make the confirmation stage clear. The applicable
+            pricing, product details, payment terms and other relevant
+            commercial information will be shared before the order is
+            confirmed.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 8 -->
+
+      <section class="section" id="payment">
+
+        <span class="section-number">08</span>
+
+        <h2>
+          Payments
+        </h2>
 
         <p>
+          Payment requirements may vary depending on the product, supplier,
+          order value and sourcing arrangement.
+        </p>
 
-          Where applicable, PartsBaba will communicate the
-          cancellation and any applicable refund or adjustment
-          in accordance with the payment and refund terms
-          applicable to the transaction.
+        <p>
+          The applicable payment terms will be communicated as part of the
+          quotation or order confirmation process.
+        </p>
 
+        <p>
+          Customers are responsible for providing accurate payment
+          information and completing payments within the agreed timelines.
+        </p>
+
+        <p>
+          Any applicable taxes, duties, shipping charges or other commercial
+          costs will be communicated as part of the relevant quotation or
+          order.
         </p>
 
       </section>
 
 
+      <!-- 9 -->
 
-      <!-- ===================================================
-           11
-      ==================================================== -->
+      <section class="section" id="shipping">
 
-      <section id="products">
+        <span class="section-number">09</span>
 
         <h2>
-          11. Product Specifications and Information
+          Delivery & Shipping
         </h2>
 
-
         <p>
-
-          Customers are responsible for verifying that a requested
-          part is suitable for their intended application.
-
+          PartsBaba works with logistics and supplier partners to arrange
+          delivery according to the applicable order terms.
         </p>
 
-
         <p>
-          Where applicable, customers should verify:
+          Delivery timelines may depend on product availability, sourcing
+          location, shipping method, customs processes and destination.
         </p>
 
+        <p>
+          Where tracking information is available, it may be shared with the
+          customer to help monitor the shipment.
+        </p>
+
+      </section>
+
+
+      <!-- 10 -->
+
+      <section class="section" id="returns">
+
+        <span class="section-number">10</span>
+
+        <h2>
+          Returns, Replacements & Support
+        </h2>
+
+        <p>
+          We want every sourcing experience to be as smooth as possible.
+          If you receive a product with an issue, please contact our support
+          team with the order details and relevant information.
+        </p>
+
+        <p>
+          Return, replacement or refund options depend on the product,
+          supplier terms, product condition and circumstances of the request.
+        </p>
+
+        <p>
+          For products that are specially sourced, customised, imported or
+          procured specifically against a confirmed requirement, applicable
+          return conditions may differ.
+        </p>
+
+        <p>
+          Our team will review the situation and guide you through the
+          available next steps.
+        </p>
+
+      </section>
+
+
+      <!-- 11 -->
+
+      <section class="section" id="accounts">
+
+        <span class="section-number">11</span>
+
+        <h2>
+          Your Account
+        </h2>
+
+        <p>
+          Certain PartsBaba features may require you to create an account or
+          provide contact information.
+        </p>
+
+        <p>
+          Please ensure that the information provided is accurate and
+          up-to-date so that we can communicate with you regarding RFQs,
+          quotations and orders.
+        </p>
+
+        <p>
+          You are responsible for keeping your account credentials
+          confidential and for activity carried out through your account.
+        </p>
+
+      </section>
+
+
+      <!-- 12 -->
+
+      <section class="section" id="responsible">
+
+        <span class="section-number">12</span>
+
+        <h2>
+          Responsible Use of the Platform
+        </h2>
+
+        <p>
+          PartsBaba is designed to support genuine product discovery,
+          sourcing and procurement requirements.
+        </p>
+
+        <p>
+          When using the platform, users are expected to:
+        </p>
 
         <ul>
-
-          <li>Part number</li>
-
-          <li>Model number</li>
-
-          <li>Revision</li>
-
-          <li>Compatibility</li>
-
-          <li>Voltage</li>
-
-          <li>Current</li>
-
-          <li>Dimensions</li>
-
-          <li>Connector type</li>
-
-          <li>Package type</li>
-
-          <li>Technical specifications</li>
-
-          <li>Brand</li>
-
-          <li>Quantity</li>
-
+          <li>Provide accurate information about their requirements;</li>
+          <li>Use the platform for legitimate business or personal sourcing needs;</li>
+          <li>Respect applicable laws and regulations;</li>
+          <li>Respect the rights of PartsBaba and other users; and</li>
+          <li>Use submitted product and account information responsibly.</li>
         </ul>
 
-
         <p>
-
-          PartsBaba may assist with product identification but
-          does not guarantee compatibility unless expressly
-          confirmed in writing.
-
-        </p>
-
-
-        <p>
-
-          Product names, images, specifications, datasheets,
-          descriptions and other information may originate from
-          manufacturers, suppliers, distributors or other
-          third parties.
-
-        </p>
-
-
-        <p>
-
-          While PartsBaba endeavours to maintain accurate
-          information, errors or omissions may occur.
-
+          We may take appropriate action where platform activity is
+          inconsistent with these principles or applicable law.
         </p>
 
       </section>
 
 
+      <!-- 13 -->
 
-      <!-- ===================================================
-           12
-      ==================================================== -->
+      <section class="section" id="ip">
 
-      <section id="payment">
+        <span class="section-number">13</span>
 
         <h2>
-          12. Payment
+          Intellectual Property
         </h2>
 
-
         <p>
-
-          Payment must be made using the payment method and
-          instructions communicated by PartsBaba.
-
+          The PartsBaba.ai website, branding, logos, interface, content,
+          software and other platform materials are owned by or licensed to
+          PartsBaba and are protected by applicable intellectual property
+          laws.
         </p>
 
-
         <p>
-
-          PartsBaba may require advance payment, partial payment
-          or full payment depending on the product, supplier,
-          order value, procurement requirements and other
-          circumstances.
-
-        </p>
-
-
-        <p>
-
-          An order shall not be treated as confirmed merely
-          because a customer has submitted an RFQ or received
-          an indicative quotation.
-
-        </p>
-
-
-        <h3>
-          Taxes, Duties and Additional Charges
-        </h3>
-
-
-        <p>
-
-          Unless expressly stated otherwise, applicable taxes,
-          shipping charges, customs duties, import charges,
-          handling charges or other government-imposed charges
-          may be additional.
-
-        </p>
-
-
-        <p>
-
-          The customer shall be responsible for applicable
-          charges communicated as part of the final quotation
-          or order.
-
+          PartsBaba grants users permission to access and use the platform
+          for its intended sourcing purposes. Content from the platform should
+          not be reproduced, modified, distributed or commercially reused
+          without appropriate permission.
         </p>
 
       </section>
 
 
+      <!-- 14 -->
 
-      <!-- ===================================================
-           13
-      ==================================================== -->
+      <section class="section" id="suppliers">
 
-      <section id="shipping">
+        <span class="section-number">14</span>
 
         <h2>
-          13. Shipping and Delivery
+          Our Supplier Network
         </h2>
 
-
         <p>
-
-          PartsBaba will endeavour to dispatch confirmed orders
-          within the communicated or estimated timeline.
-
+          PartsBaba works with suppliers and sourcing partners to help
+          identify and procure products.
         </p>
 
-
         <p>
-
-          Delivery dates and timelines may be affected by
-          third-party logistics providers, courier partners,
-          customs authorities, suppliers and circumstances
-          beyond PartsBaba's reasonable control.
-
+          Product availability, pricing, specifications and lead times may
+          therefore depend partly on information received from these
+          suppliers and partners.
         </p>
 
-
         <p>
-
-          Delivery to a particular location may not always
-          be available.
-
-        </p>
-
-
-        <p>
-
-          Additional shipping charges may apply for certain
-          locations, products, quantities or special delivery
-          requirements.
-
+          We aim to provide accurate information based on the information
+          available to us and communicate relevant updates during the sourcing
+          process.
         </p>
 
       </section>
 
 
+      <!-- 15 -->
 
-      <!-- ===================================================
-           14
-      ==================================================== -->
+      <section class="section" id="unexpected">
 
-      <section id="returns">
+        <span class="section-number">15</span>
 
         <h2>
-          14. Returns, Refunds and Replacement
+          Unexpected Events & Delays
         </h2>
 
-
         <p>
-
-          Returns, refunds and replacements are subject to the
-          applicable PartsBaba return/refund policy and the
-          specific product or order terms.
-
+          Occasionally, circumstances outside reasonable control may affect
+          sourcing, processing or delivery.
         </p>
 
-
         <p>
-
-          Certain products may be non-returnable due to their
-          nature, sourcing requirements, electronic characteristics,
-          customised procurement, supplier restrictions or other
-          commercial reasons.
-
+          These may include natural events, transportation disruptions,
+          customs restrictions, supplier interruptions, changes in
+          regulations, infrastructure issues or other unforeseen events.
         </p>
 
-
         <p>
-
-          Products should not be returned without prior approval
-          from PartsBaba.
-
+          Where such circumstances affect an order, we will make reasonable
+          efforts to communicate the situation and work towards an available
+          solution.
         </p>
 
       </section>
 
 
+      <!-- 16 -->
 
-      <!-- ===================================================
-           15
-      ==================================================== -->
+      <section class="section" id="privacy">
 
-      <section id="accounts">
+        <span class="section-number">16</span>
 
         <h2>
-          15. User Accounts
+          Privacy & Your Information
         </h2>
 
-
         <p>
-
-          Where account registration is required, users are
-          responsible for maintaining the confidentiality of
-          their login credentials and for activities conducted
-          through their account.
-
+          We take the privacy of our users seriously.
         </p>
 
-
         <p>
-
-          Users must provide accurate information and must not
-          create accounts using false identities or information.
-
+          Information provided through PartsBaba.ai may be used to process
+          RFQs, communicate with customers, arrange sourcing and delivery,
+          provide support and improve our services.
         </p>
 
+        <p>
+          For more information about how information is handled, please refer
+          to our Privacy Policy.
+        </p>
+
+        <!-- Replace href with the final Privacy Policy URL once confirmed -->
+        <a
+          href="https://partsbaba.ai/"
+          style="
+            color:#ea580c;
+            font-weight:700;
+            display:inline-block;
+            margin-top:5px;
+          "
+        >
+          View Privacy Policy →
+        </a>
+
+      </section>
+
+
+      <!-- 17 -->
+
+      <section class="section" id="updates">
+
+        <span class="section-number">17</span>
+
+        <h2>
+          Updates to These Terms
+        </h2>
 
         <p>
+          As PartsBaba.ai grows and our services evolve, we may occasionally
+          update these Terms & Conditions.
+        </p>
 
-          PartsBaba reserves the right to suspend or terminate
-          accounts where misuse, fraud, abuse, unauthorised
-          activity or violation of these Terms is suspected.
+        <p>
+          Updated terms will be published on this page along with the
+          corresponding revision date.
+        </p>
 
+        <p>
+          We encourage users to review this page periodically so that they
+          remain familiar with the current terms applicable to the platform.
         </p>
 
       </section>
 
 
+      <!-- 18 -->
 
-      <!-- ===================================================
-           16
-      ==================================================== -->
+      <section class="section" id="law">
 
-      <section id="prohibited">
-
-        <h2>
-          16. Prohibited Use
-        </h2>
-
-
-        <p>
-          Users must not:
-        </p>
-
-
-        <ul>
-
-          <li>
-            Use the platform for unlawful purposes.
-          </li>
-
-          <li>
-            Provide false or misleading information.
-          </li>
-
-          <li>
-            Attempt to access another user's account.
-          </li>
-
-          <li>
-            Interfere with website operations.
-          </li>
-
-          <li>
-            Introduce malicious software.
-          </li>
-
-          <li>
-            Attempt to bypass security controls.
-          </li>
-
-          <li>
-            Scrape or systematically copy website data without permission.
-          </li>
-
-          <li>
-            Use PartsBaba information for fraudulent purposes.
-          </li>
-
-          <li>
-            Infringe intellectual property rights.
-          </li>
-
-          <li>
-            Use the platform in a manner that violates applicable law.
-          </li>
-
-        </ul>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           17
-      ==================================================== -->
-
-      <section id="intellectual">
+        <span class="section-number">18</span>
 
         <h2>
-          17. Intellectual Property
+          Applicable Law
         </h2>
 
-
         <p>
-
-          All website content, including logos, trademarks,
-          text, graphics, interface designs, images, software,
-          databases and other materials, is owned by or licensed
-          to PartsBaba or its respective rights holders unless
-          otherwise stated.
-
+          These Terms & Conditions are governed by the laws applicable in
+          India.
         </p>
 
-
         <p>
-
-          No content may be reproduced, copied, modified,
-          distributed or commercially exploited without
-          appropriate permission.
-
+          Any matters arising in connection with these terms or the use of
+          PartsBaba.ai will be subject to the applicable jurisdiction of the
+          courts in New Delhi, India, subject to applicable law.
         </p>
 
       </section>
 
 
+      <!-- CONTACT -->
 
-      <!-- ===================================================
-           18
-      ==================================================== -->
+      <section class="section" id="contact">
 
-      <section id="third-party">
+        <span class="section-number">19</span>
 
-        <h2>
-          18. Third-Party Suppliers and Services
-        </h2>
+        <div class="contact-card">
 
+          <h2>
+            We're Here to Help
+          </h2>
 
-        <p>
+          <p>
+            If you have a question about these terms, an RFQ, a quotation or
+            an order, our team will be happy to help.
+          </p>
 
-          PartsBaba may work with manufacturers, distributors,
-          suppliers, logistics providers, payment providers and
-          other third parties to fulfil sourcing requirements.
+          <div class="contact-grid">
 
-        </p>
+            <div class="contact-item">
 
+              <small>Address</small>
 
-        <p>
+              <span>
+                E-49/7, Pocket D, Okhla Phase II,<br />
+                Okhla Industrial Estate,<br />
+                New Delhi, Delhi – 110020, India
+              </span>
 
-          PartsBaba is not responsible for delays or failures
-          caused directly by third parties where such circumstances
-          are outside PartsBaba's reasonable control.
+            </div>
 
-        </p>
+            <div class="contact-item">
 
-      </section>
+              <small>Email</small>
 
+              <a href="mailto:care@partsbaba.com">
+                care@partsbaba.com
+              </a>
 
+            </div>
 
-      <!-- ===================================================
-           19
-      ==================================================== -->
+            <div class="contact-item">
 
-      <section id="liability">
+              <small>Phone</small>
 
-        <h2>
-          19. Limitation of Liability
-        </h2>
+              <a href="tel:+917303600605">
+                +91 73036 00605
+              </a>
 
+            </div>
 
-        <p>
+            <div class="contact-item">
 
-          To the maximum extent permitted by applicable law,
-          PartsBaba shall not be liable for indirect, incidental,
-          consequential or special losses arising from delays,
-          non-availability, supplier issues, estimated lead times,
-          pricing changes, logistics delays or other circumstances
-          beyond its reasonable control.
+              <small>Support Hours</small>
 
-        </p>
+              <span>
+                Monday – Saturday<br />
+                10:00 AM – 6:00 PM
+              </span>
 
+            </div>
 
-        <p>
+            <div class="contact-item">
 
-          Nothing in these Terms shall exclude or limit liability
-          that cannot legally be excluded or limited under
-          applicable law.
+              <small>GSTIN</small>
 
-        </p>
+              <span>
+                07AAPCP4972Q1ZC
+              </span>
 
-      </section>
+            </div>
 
+            <div class="contact-item">
 
+              <small>CIN</small>
 
-      <!-- ===================================================
-           20
-      ==================================================== -->
+              <span>
+                U47410DL2025PTC443631
+              </span>
 
-      <section id="force">
-
-        <h2>
-          20. Force Majeure
-        </h2>
-
-
-        <p>
-
-          PartsBaba shall not be responsible for failure or delay
-          caused by events beyond its reasonable control, including
-          natural disasters, war, civil unrest, government actions,
-          strikes, pandemics, cyber incidents, transportation
-          disruptions, supplier failures, customs restrictions,
-          infrastructure failures or other force majeure events.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           21
-      ==================================================== -->
-
-      <section id="privacy">
-
-        <h2>
-          21. Privacy
-        </h2>
-
-
-        <p>
-
-          Use of PartsBaba.ai is also governed by the
-          <a
-            href="https://partsbaba.ai/"
-            style="
-              color:#087bd0;
-              font-weight:700;
-            "
-          >
-            PartsBaba Privacy Policy
-          </a>.
-
-        </p>
-
-
-        <p>
-
-          The Privacy Policy explains how PartsBaba collects,
-          uses, stores and processes personal information.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           22
-      ==================================================== -->
-
-      <section id="changes">
-
-        <h2>
-          22. Changes to These Terms
-        </h2>
-
-
-        <p>
-
-          PartsBaba may modify these Terms from time to time
-          to reflect changes in its services, business operations,
-          technology, legal requirements or other circumstances.
-
-        </p>
-
-
-        <p>
-
-          Updated Terms will be published on the website with
-          the applicable revision date.
-
-        </p>
-
-
-        <p>
-
-          Your continued use of PartsBaba.ai after updated Terms
-          are published constitutes your acceptance of the updated
-          Terms to the extent permitted by applicable law.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           23
-      ==================================================== -->
-
-      <section id="law">
-
-        <h2>
-          23. Governing Law and Jurisdiction
-        </h2>
-
-
-        <p>
-
-          These Terms shall be governed by the laws of India.
-
-        </p>
-
-
-        <p>
-
-          Subject to applicable law, disputes relating to
-          PartsBaba.ai shall be subject to the jurisdiction of
-          the competent courts in <strong>New Delhi, India</strong>.
-
-        </p>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           24
-      ==================================================== -->
-
-      <section id="contact">
-
-        <h2>
-          24. Contact Us
-        </h2>
-
-
-        <p>
-
-          If you have questions regarding these Terms,
-          an RFQ, quotation, order or any PartsBaba service,
-          please contact us.
-
-        </p>
-
-
-        <div class="contact-box">
-
-          <h3>
-            PartsBaba Ventures Private Limited
-          </h3>
-
-
-          <div class="contact-detail">
-
-            <strong>
-              Address
-            </strong>
-
-            <span>
-              E-49/7, Pocket D, Okhla Phase II,
-              Okhla Industrial Estate,
-              New Delhi, Delhi – 110020, India
-            </span>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <strong>
-              Email
-            </strong>
-
-            <a href="mailto:care@partsbaba.com">
-              care@partsbaba.com
-            </a>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <strong>
-              Phone
-            </strong>
-
-            <a href="tel:+917303600605">
-              +91 73036 00605
-            </a>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <strong>
-              GSTIN
-            </strong>
-
-            <span>
-              07AAPCP4972Q1ZC
-            </span>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <strong>
-              CIN
-            </strong>
-
-            <span>
-              U47410DL2025PTC443631
-            </span>
+            </div>
 
           </div>
 
@@ -2758,45 +1468,33 @@
       </section>
 
 
-    </article>
+    </main>
 
-  </main>
+  </div>
 
 
-
-  <!-- =======================================================
+  <!-- =========================
        FOOTER
-  ======================================================== -->
+  ========================== -->
 
   <footer>
 
-    <div class="container">
+    <div class="footer-inner">
 
+      <div class="footer-top">
 
-      <div class="footer-grid">
+        <div class="footer-brand">
 
+          <img
+            class="footer-logo"
+            src="https://partsbaba.ai/static/media/PartsBABA_logo.c956a49373c9e9868bf7.png"
+            alt="PartsBaba"
+          />
 
-        <div>
-
-          <a
-            href="https://partsbaba.ai/"
-          >
-
-            <img
-              class="footer-logo"
-              src="https://partsbaba.ai/static/media/PartsBABA_logo.c956a49373c9e9868bf7.png"
-              alt="PartsBaba.ai"
-            >
-
-          </a>
-
-
-          <p class="footer-description">
-
-            AI-powered sourcing for electronic parts,
-            hardware, repair requirements and hard-to-find
-            components.
-
+          <p>
+            The smarter way to source electronic parts, IT hardware and
+            specialised components — combining technology, sourcing expertise
+            and a trusted supplier network.
           </p>
 
         </div>
@@ -2804,9 +1502,7 @@
 
         <div class="footer-column">
 
-          <h4>
-            Explore
-          </h4>
+          <h4>Explore</h4>
 
           <a href="https://partsbaba.ai/">
             AI Search
@@ -2816,12 +1512,16 @@
             Categories
           </a>
 
-          <a href="https://partsbaba.ai/">
+          <a href="https://partsbaba.ai/#insights">
+            Insights
+          </a>
+
+          <a href="https://partsbaba.ai/#about">
             About Us
           </a>
 
-          <a href="#contact">
-            Contact
+          <a href="https://partsbaba.ai/">
+            Request a Quote
           </a>
 
         </div>
@@ -2829,56 +1529,49 @@
 
         <div class="footer-column">
 
-          <h4>
-            Legal
-          </h4>
+          <h4>Legal & Support</h4>
 
           <a href="#">
-
-            Terms &amp; Conditions
-
+            Terms & Conditions
           </a>
 
+          <!-- Replace with final Privacy Policy URL -->
           <a href="https://partsbaba.ai/">
-
             Privacy Policy
+          </a>
 
+          <a href="https://partsbaba.ai/#contact">
+            Contact Us
+          </a>
+
+          <a href="https://partsbaba.com/">
+            PartsBaba.com
           </a>
 
           <a href="mailto:care@partsbaba.com">
-
-            Contact Support
-
+            Email Support
           </a>
 
         </div>
-
 
       </div>
 
 
       <div class="footer-bottom">
 
-        <span>
+        <div>
+          © 2026 PartsBaba. All rights reserved.
+        </div>
 
-          © 2026 PartsBaba Ventures Private Limited.
-          All rights reserved.
-
-        </span>
-
-
-        <span>
-
-          Building a one-stop solution for Engineers.
-
-        </span>
+        <div>
+          Simple. Transparent. Reliable.
+        </div>
 
       </div>
 
     </div>
 
   </footer>
-
 
 </body>
 </html>
